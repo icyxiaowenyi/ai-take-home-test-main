@@ -9,6 +9,10 @@
 
 </div>
 
+## outputs
+![example_train](./images/屏幕截图 2024-02-18 174335.png)
+屏幕截图 2024-02-18 174335.png
+
 ## What is all this?
 This "programming assignment" is really just a way to get you used to
 some of the tools we use every day at Pantheon to help with our research.
