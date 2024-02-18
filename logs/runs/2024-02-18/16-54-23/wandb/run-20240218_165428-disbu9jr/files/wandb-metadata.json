@@ -1,0 +1,48 @@
+{
+    "os": "Windows-10-10.0.22631-SP0",
+    "python": "3.8.18",
+    "heartbeatAt": "2024-02-18T08:54:31.257941",
+    "startedAt": "2024-02-18T08:54:28.024972",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "experiment=train_mnist_gan.yaml"
+    ],
+    "state": "running",
+    "program": "run.py",
+    "codePathLocal": null,
+    "host": "LAPTOP-M58GK71B",
+    "username": "Wenyi",
+    "executable": "C:\\Users\\Wenyi\\anaconda3\\envs\\pantheon-py38\\python.exe",
+    "cpu_count": 24,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 2200.0,
+        "min": 0.0,
+        "max": 2200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2200.0,
+            "min": 0.0,
+            "max": 2200.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 488.28026962280273,
+            "used": 7.705223083496094
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "memory_total": 8585740288
+        }
+    ],
+    "memory": {
+        "total": 15.627429962158203
+    }
+}
