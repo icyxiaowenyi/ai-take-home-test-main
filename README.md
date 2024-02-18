@@ -9,9 +9,49 @@
 
 </div>
 
-## outputs
-![example_train](./images/屏幕截图 2024-02-18 174335.png)
-屏幕截图 2024-02-18 174335.png
+## Experiments results
+![result_1](./images/result_1.png)
+![result_2](./images/result_2.png)
+![result_3](./images/result_3.png)
+![result_4](./images/result_4.png)
+![result_5](./images/result_5.png)
+
+## Questions Answers
+
+Try to prepare some short answers to the following questions below for discussion in the interview.
+
+* What is the role of the discriminator in a GAN model? Use this project's discriminator as an example.
+
+Ans:
+In an MNIST digit generation task using a GAN model, the discriminator's role is to distinguish real images from the MNIST dataset from fake images produced by the generator. 
+It serves as a classifier, providing feedback to the generator on the quality of its outputs. 
+Through adversarial training, where the discriminator and generator compete,
+the discriminator helps improve the generator's ability to create realistic digit images, 
+driving the model towards generating images that closely mimic real handwritten digits.
+
+
+* The generator network in this code base takes two arguments: `noise` and `labels`.
+What are these inputs and how could they be used at inference time to generate an image of the number 5?
+
+Ans:To generate an image of the number 5 using a generator that takes noise and labels as inputs:
+Noise: Generate a random noise vector to provide variability.
+Label: Set the label for the number 5, indicating the desired output.
+Inference: Feed the noise and the label for 5 into the generator to produce an image of the digit 5.
+
+* What steps are needed to deploy a model into production?
+
+Ans:Model Selection and Training; Model Evaluation and Testing; Deployment Environment Setup; API Development; Integration Testing; Security Measures; Feedback Loop
+
+
+* If you wanted to train with multiple GPUs, 
+what can you do in pytorch lightning to make sure data is allocated to the correct GPU? 
+
+Ans:
+train on 2 GPUs:
+
+from pytorch_lightning import Trainer
+
+trainer = Trainer(gpus=2, accelerator='ddp')
 
 ## What is all this?
 This "programming assignment" is really just a way to get you used to
@@ -98,19 +138,7 @@ section.
 - **Implement your own networks**: you are free to choose what you deem most appropriate, but we recommend using CNN and their variants
 - Use a more complex dataset, such as Fashion-MNIST
 
-## Questions
 
-Try to prepare some short answers to the following questions below for discussion in the interview.
-
-* What is the role of the discriminator in a GAN model? Use this project's discriminator as an example.
-
-* The generator network in this code base takes two arguments: `noise` and `labels`.
-What are these inputs and how could they be used at inference time to generate an image of the number 5?
-
-* What steps are needed to deploy a model into production?
-
-* If you wanted to train with multiple GPUs, 
-what can you do in pytorch lightning to make sure data is allocated to the correct GPU? 
 
 ## Submission
 
