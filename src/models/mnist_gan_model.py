@@ -117,7 +117,7 @@ class MNISTGANModel(LightningModule):
 
         # TODO: Create fake images
         z = torch.randn(64, self.generator.latent_dim, device=self.device)  # Adjust the size according to your needs
-        labels = torch.randint(0, 10, (64,), device=self.device)  # Assuming 10 classes for MNIST
+        labels = torch.randint(0, 10, (64,), device=self.device)  # Assuming 10 classes for MNIST/Fashion-MNIST
         with torch.no_grad():
             generated_imgs = self.generator(z, labels)
 
