@@ -16,6 +16,11 @@
 ![result_4](./images/result_4.png)
 ![result_5](./images/result_5.png)
 
+## Bonus Task
+Using Fashion-MNIST
+
+![bonus](./images/bonus.png)
+
 ## Questions Answers
 
 Try to prepare some short answers to the following questions below for discussion in the interview.
