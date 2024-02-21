@@ -38,3 +38,4 @@ class Generator(nn.Module):
         img = self.model(gen_input)
         img = img.view(img.size(0), *self.img_shape)
         return img
+
